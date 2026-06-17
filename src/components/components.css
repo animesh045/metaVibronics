@@ -40,15 +40,30 @@
   background: var(--bg-secondary);
 }
 
+.navSecondaryCta {
+  padding: 10px 24px;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  border-radius: 100px;
+  transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+}
+.navSecondaryCta:hover {
+  border-color: var(--text-secondary);
+  background: var(--bg-secondary);
+  transform: translateY(-1px);
+}
+
 .navCta {
   padding: 10px 24px;
-  background: var(--text-primary); color: var(--bg-primary);
-  font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
-  border-radius: var(--radius-sm); transition: background var(--transition-fast), transform var(--transition-fast);
+  background: #00c2ff; color: #050508;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.04em;
+  border-radius: 100px; transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 .navCta:hover {
-  background: var(--accent);
-  color: #fff;
+  background: #00e5ff;
+  color: #050508;
+  box-shadow: 0 4px 14px rgba(0, 194, 255, 0.4);
   transform: translateY(-1px);
 }
 .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }

@@ -59,6 +59,8 @@ export interface SiteContent {
     phone: string;
     instagram: string;
     responseHours: string;
+    secondaryCtaText?: string;
+    secondaryCtaLink?: string;
   };
   navigation: {
     links: { label: string; href: string }[];
@@ -129,6 +131,8 @@ export const defaultSiteContent: SiteContent = {
     phone: "+91 83688 25928",
     instagram: "@metavibronics",
     responseHours: "Within 24 hours",
+    secondaryCtaText: "Meta Labs",
+    secondaryCtaLink: "#about",
   },
   navigation: {
     links: [

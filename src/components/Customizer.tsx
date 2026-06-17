@@ -377,6 +377,22 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
                   onChange={(e) => updateBranding("instagram", e.target.value)}
                 />
               </div>
+              <div className="customizerInputGroup">
+                <label>Secondary CTA Label (Outlined Button)</label>
+                <input 
+                  type="text" 
+                  value={content.branding.secondaryCtaText || ""} 
+                  onChange={(e) => updateBranding("secondaryCtaText", e.target.value)}
+                />
+              </div>
+              <div className="customizerInputGroup">
+                <label>Secondary CTA Link</label>
+                <input 
+                  type="text" 
+                  value={content.branding.secondaryCtaLink || ""} 
+                  onChange={(e) => updateBranding("secondaryCtaLink", e.target.value)}
+                />
+              </div>
 
               <h4 style={{ marginTop: "24px" }}>Hero Copy</h4>
               <div className="customizerInputGroup">
