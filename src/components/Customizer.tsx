@@ -191,6 +191,8 @@ export interface SiteContent {
     phone: string;
     instagram: string;
     responseHours: string;
+    secondaryCtaText?: string;
+    secondaryCtaLink?: string;
   };
   navigation: {
     links: { label: string; href: string }[];
