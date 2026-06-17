@@ -63,6 +63,13 @@ export default function About({ content }: AboutProps) {
             >
               <div className="fRole">{founder.role}</div>
               <div className="fName">{founder.name}</div>
+              {founder.email && (
+                <div style={{ fontSize: "12.5px", color: "var(--text-secondary)", marginBottom: "16px", marginTop: "-12px" }}>
+                  <a href={`mailto:${founder.email}`} style={{ color: "var(--accent)" }} className="founderEmailLink">
+                    {founder.email}
+                  </a>
+                </div>
+              )}
               <div className="fDivider"></div>
               <p className="fBio">{founder.bio}</p>
               <div className="fSkills">

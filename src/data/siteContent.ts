@@ -3,6 +3,7 @@ export interface Founder {
   role: string;
   bio: string;
   skills: string[];
+  email: string;
 }
 
 export interface ServiceCard {
@@ -166,12 +167,14 @@ export const defaultSiteContent: SiteContent = {
         role: "Founder · Creative Systems & Growth Lead",
         bio: "Computer Science engineer who built Meta Vibronics from zero while completing his degree. Leads strategy, UI/UX, performance marketing, and creative operations. GATE CS qualified (2025 & 2026). Delivered 100+ design assets. Managed ad campaigns achieving ₹1.11 CPC — across Meta, Google, and LinkedIn.",
         skills: ["Brand Systems", "UI/UX · Figma", "Meta & Google Ads", "Adobe InDesign", "Canva Pro", "Performance Marketing", "Creative Operations", "CapCut · InShot"],
+        email: "animesh.metavibronics@gmail.com",
       },
       {
         name: "Bhumi Gupta",
         role: "Co-Founder · Creative Strategy & Communication Lead",
         bio: "Brand designer, content strategist, and published author. Leads brand identity, copywriting, publication design, and creative direction. Her work spans fragrance packaging (Lurance), health supplement communication (BioAro), influencer content systems, and editorial storytelling across 6+ organisations.",
         skills: ["Brand Identity", "Packaging Design", "Copywriting", "Content Strategy", "Publication Design", "Adobe Illustrator", "Canva Pro", "Brand Storytelling"],
+        email: "bhumi.metavibronics@gmail.com",
       },
     ],
     quoteHtml: "Systems <em>+</em> Story <em>=</em> Brands that connect, communicate, and grow.",
@@ -237,6 +240,7 @@ export const defaultSiteContent: SiteContent = {
         tags: ["International", "Health & Nutrition"],
         isFeatured: true,
         imageUrl: "/assets/work/bioaro.jpg",
+        externalLink: "https://bioaro.com",
       },
       {
         id: "project-fourthx",
@@ -246,6 +250,7 @@ export const defaultSiteContent: SiteContent = {
         deliverables: ["30-day content system", "Daily reels, carousels & statics", "Tech copy", "3D visuals", "Fintech, HealthTech & Real Estate verticals"],
         tags: ["SaaS", "Content Strategy"],
         imageUrl: "/assets/work/fourthx.jpg",
+        externalLink: "https://fourthx.com",
       },
       {
         id: "project-lurance",
@@ -255,6 +260,7 @@ export const defaultSiteContent: SiteContent = {
         deliverables: ["Brand guidelines", "Typography system", "Label design", "Bottle mockups", "Packaging visuals", "LinkedIn banner"],
         tags: ["Fragrance", "Packaging"],
         imageUrl: "/assets/work/lurance.jpg",
+        externalLink: "https://lurance.com",
       },
       {
         id: "project-denstar",
@@ -264,6 +270,7 @@ export const defaultSiteContent: SiteContent = {
         deliverables: ["Branding suite", "FAQ carousels", "Testimonials", "Festive content", "Service menus", "Video creative"],
         tags: ["Healthcare", "Brand System"],
         imageUrl: "/assets/work/denstar.jpg",
+        externalLink: "https://denstardental.com",
       },
       {
         id: "project-jmc",
@@ -273,6 +280,7 @@ export const defaultSiteContent: SiteContent = {
         deliverables: ["Company profile deck", "Project showcase", "Leadership profiles", "Print-ready layouts"],
         tags: ["Construction", "B2B Brand"],
         imageUrl: "/assets/work/jmc.jpg",
+        externalLink: "https://jmcconstruction.com",
       },
       {
         id: "project-gurusahiba",
@@ -282,6 +290,7 @@ export const defaultSiteContent: SiteContent = {
         deliverables: ["Highlight covers", "Quote posts", "Tip carousels", "Reel covers", "Grid aesthetic", "Affirmations series"],
         tags: ["Personal Brand", "Author"],
         imageUrl: "/assets/work/gurusahiba.jpg",
+        externalLink: "https://gurusahiba.com",
       },
     ],
   },

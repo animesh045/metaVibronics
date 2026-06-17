@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { SiteContent } from "../data/siteContent";
+import { SiteContent, Project } from "../data/siteContent";
 
 interface CustomizerProps {
   content: SiteContent;
@@ -9,7 +9,16 @@ interface CustomizerProps {
 
 export default function Customizer({ content, onChange }: CustomizerProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<"general" | "founders" | "pricing">("general");
+  const [activeTab, setActiveTab] = useState<"general" | "founders" | "projects" | "pricing">("general");
+
+  // State for new project form
+  const [newProjectClient, setNewProjectClient] = useState("");
+  const [newProjectTitle, setNewProjectTitle] = useState("");
+  const [newProjectBrief, setNewProjectBrief] = useState("");
+  const [newProjectImage, setNewProjectImage] = useState("/assets/work/fourthx.jpg");
+  const [newProjectLink, setNewProjectLink] = useState("");
+  const [newProjectTags, setNewProjectTags] = useState("");
+  const [newProjectDelivs, setNewProjectDelivs] = useState("");
 
   const updateBranding = (field: keyof SiteContent["branding"], value: string) => {
     onChange({
@@ -46,6 +55,65 @@ export default function Customizer({ content, onChange }: CustomizerProps) {
     });
   };
 
+  const updateProject = <K extends keyof Project>(index: number, field: K, value: Project[K]) => {
+    const updatedProjects = [...content.work.projects];
+    updatedProjects[index] = {
+      ...updatedProjects[index],
+      [field]: value,
+    };
+    onChange({
+      ...content,
+      work: {
+        ...content.work,
+        projects: updatedProjects,
+      },
+    });
+  };
+
+  const deleteProject = (index: number) => {
+    const updatedProjects = content.work.projects.filter((_, idx) => idx !== index);
+    onChange({
+      ...content,
+      work: {
+        ...content.work,
+        projects: updatedProjects,
+      },
+    });
+  };
+
+  const addProject = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newProjectClient || !newProjectTitle) return;
+
+    const newProject: Project = {
+      id: `project-${Date.now()}`,
+      client: newProjectClient,
+      title: newProjectTitle,
+      brief: newProjectBrief,
+      imageUrl: newProjectImage || "/assets/work/fourthx.jpg",
+      externalLink: newProjectLink || undefined,
+      tags: newProjectTags ? newProjectTags.split(",").map(t => t.trim()) : ["General"],
+      deliverables: newProjectDelivs ? newProjectDelivs.split(",").map(d => d.trim()) : ["Creative Design"],
+    };
+
+    onChange({
+      ...content,
+      work: {
+        ...content.work,
+        projects: [...content.work.projects, newProject],
+      },
+    });
+
+    // Reset fields
+    setNewProjectClient("");
+    setNewProjectTitle("");
+    setNewProjectBrief("");
+    setNewProjectImage("/assets/work/fourthx.jpg");
+    setNewProjectLink("");
+    setNewProjectTags("");
+    setNewProjectDelivs("");
+  };
+
   const updatePlan = (index: number, field: "priceINR" | "priceUSD" | "name", value: string) => {
     const updatedPlans = [...content.pricing.plans];
     updatedPlans[index] = {
@@ -67,6 +135,7 @@ export default function Customizer({ content, onChange }: CustomizerProps) {
   role: string;
   bio: string;
   skills: string[];
+  email: string;
 }
 
 export interface ServiceCard {
@@ -229,20 +298,20 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
         </div>
 
         {/* Navigation Tabs */}
-        <div style={{ display: "flex", borderBottom: "1px solid var(--border-color)", background: "var(--bg-secondary)" }}>
+        <div style={{ display: "flex", borderBottom: "1px solid var(--border-color)", background: "var(--bg-secondary)", flexWrap: "wrap" }}>
           <button 
             style={{ 
-              flex: 1, padding: "12px", fontSize: "11px", fontWeight: "700", 
+              flex: "1 1 50%", padding: "10px", fontSize: "10px", fontWeight: "700", 
               textTransform: "uppercase", color: activeTab === "general" ? "var(--accent)" : "var(--text-secondary)",
               borderBottom: activeTab === "general" ? "2px solid var(--accent)" : "none"
             }}
             onClick={() => setActiveTab("general")}
           >
-            General & Hero
+            General
           </button>
           <button 
             style={{ 
-              flex: 1, padding: "12px", fontSize: "11px", fontWeight: "700", 
+              flex: "1 1 50%", padding: "10px", fontSize: "10px", fontWeight: "700", 
               textTransform: "uppercase", color: activeTab === "founders" ? "var(--accent)" : "var(--text-secondary)",
               borderBottom: activeTab === "founders" ? "2px solid var(--accent)" : "none"
             }}
@@ -252,7 +321,17 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
           </button>
           <button 
             style={{ 
-              flex: 1, padding: "12px", fontSize: "11px", fontWeight: "700", 
+              flex: "1 1 50%", padding: "10px", fontSize: "10px", fontWeight: "700", 
+              textTransform: "uppercase", color: activeTab === "projects" ? "var(--accent)" : "var(--text-secondary)",
+              borderBottom: activeTab === "projects" ? "2px solid var(--accent)" : "none"
+            }}
+            onClick={() => setActiveTab("projects")}
+          >
+            Projects
+          </button>
+          <button 
+            style={{ 
+              flex: "1 1 50%", padding: "10px", fontSize: "10px", fontWeight: "700", 
               textTransform: "uppercase", color: activeTab === "pricing" ? "var(--accent)" : "var(--text-secondary)",
               borderBottom: activeTab === "pricing" ? "2px solid var(--accent)" : "none"
             }}
@@ -275,7 +354,7 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
                 />
               </div>
               <div className="customizerInputGroup">
-                <label>Email Address</label>
+                <label>Studio General Email</label>
                 <input 
                   type="email" 
                   value={content.branding.email} 
@@ -350,11 +429,19 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
                     />
                   </div>
                   <div className="customizerInputGroup">
+                    <label>Founder Direct Email</label>
+                    <input 
+                      type="email" 
+                      value={founder.email || ""} 
+                      onChange={(e) => updateFounder(idx, "email", e.target.value)}
+                    />
+                  </div>
+                  <div className="customizerInputGroup">
                     <label>Biography</label>
                     <textarea 
                       value={founder.bio} 
                       onChange={(e) => updateFounder(idx, "bio", e.target.value)}
-                      rows={5}
+                      rows={4}
                     />
                   </div>
                   <div className="customizerInputGroup">
@@ -367,6 +454,140 @@ export const defaultSiteContent: SiteContent = ${JSON.stringify(content, null, 2
                   </div>
                 </div>
               ))}
+            </div>
+          )}
+
+          {activeTab === "projects" && (
+            <div className="customizerSection">
+              <h4>Manage Current Projects</h4>
+              {content.work.projects.map((project, idx) => (
+                <div key={project.id} style={{ padding: "12px", border: "1px solid var(--border-color)", borderRadius: "6px", marginBottom: "16px", background: "var(--bg-secondary)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                    <strong style={{ fontSize: "13px" }}>{project.client}</strong>
+                    <button 
+                      onClick={() => deleteProject(idx)}
+                      style={{ fontSize: "11px", color: "#ef4444", fontWeight: "600", cursor: "pointer" }}
+                    >
+                      Delete
+                    </button>
+                  </div>
+                  <div className="customizerInputGroup">
+                    <label>Project Title / Name</label>
+                    <input 
+                      type="text" 
+                      value={project.title} 
+                      onChange={(e) => updateProject(idx, "title", e.target.value)}
+                    />
+                  </div>
+                  <div className="customizerInputGroup">
+                    <label>Project Image path / URL</label>
+                    <input 
+                      type="text" 
+                      value={project.imageUrl} 
+                      onChange={(e) => updateProject(idx, "imageUrl", e.target.value)}
+                    />
+                  </div>
+                  <div className="customizerInputGroup">
+                    <label>External project link</label>
+                    <input 
+                      type="text" 
+                      value={project.externalLink || ""} 
+                      placeholder="https://example.com/project"
+                      onChange={(e) => updateProject(idx, "externalLink", e.target.value)}
+                    />
+                  </div>
+                  <div className="customizerInputGroup">
+                    <label>Brief Description</label>
+                    <textarea 
+                      value={project.brief} 
+                      onChange={(e) => updateProject(idx, "brief", e.target.value)}
+                      rows={3}
+                    />
+                  </div>
+                </div>
+              ))}
+
+              <h4 style={{ marginTop: "32px", borderTop: "1px solid var(--border-color)", paddingTop: "20px" }}>
+                Add New Project
+              </h4>
+              <form onSubmit={addProject} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div className="customizerInputGroup">
+                  <label>Client Name *</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. BioAro Supplement" 
+                    value={newProjectClient}
+                    onChange={(e) => setNewProjectClient(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="customizerInputGroup">
+                  <label>Project Title *</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. BioAro Product Catalog" 
+                    value={newProjectTitle}
+                    onChange={(e) => setNewProjectTitle(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="customizerInputGroup">
+                  <label>Image path *</label>
+                  <input 
+                    type="text" 
+                    value={newProjectImage} 
+                    onChange={(e) => setNewProjectImage(e.target.value)}
+                    required
+                  />
+                  <span className="customizerHelpText">Defaults to `/assets/work/fourthx.jpg` (or local file paths)</span>
+                </div>
+                <div className="customizerInputGroup">
+                  <label>External Project Link</label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. https://github.com/... or project website" 
+                    value={newProjectLink}
+                    onChange={(e) => setNewProjectLink(e.target.value)}
+                  />
+                </div>
+                <div className="customizerInputGroup">
+                  <label>Tags (comma separated)</label>
+                  <input 
+                    type="text" 
+                    placeholder="SaaS, UI/UX, Healthcare" 
+                    value={newProjectTags}
+                    onChange={(e) => setNewProjectTags(e.target.value)}
+                  />
+                </div>
+                <div className="customizerInputGroup">
+                  <label>Deliverables (comma separated)</label>
+                  <input 
+                    type="text" 
+                    placeholder="Figma Prototype, Brand Guidelines, Meta Ads" 
+                    value={newProjectDelivs}
+                    onChange={(e) => setNewProjectDelivs(e.target.value)}
+                  />
+                </div>
+                <div className="customizerInputGroup">
+                  <label>Brief description</label>
+                  <textarea 
+                    placeholder="Explain the scope of the project and what was achieved..." 
+                    value={newProjectBrief}
+                    onChange={(e) => setNewProjectBrief(e.target.value)}
+                    rows={3}
+                  />
+                </div>
+                <button 
+                  type="submit"
+                  style={{ 
+                    background: "var(--accent)", color: "#fff", padding: "12px", 
+                    borderRadius: "6px", fontWeight: "600", fontSize: "13px", cursor: "pointer", 
+                    marginTop: "10px", textAlign: "center" 
+                  }}
+                >
+                  Add Project to Site
+                </button>
+              </form>
             </div>
           )}
 
