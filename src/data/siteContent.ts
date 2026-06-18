@@ -410,7 +410,7 @@ export const defaultSiteContent: SiteContent = {
           "Packaging"
         ],
         "imageUrl": "/assets/work/lur.png",
-        "externalLink": "https://drive.google.com/drive/folders/1_TMqws7N7PfAI0R4egk4WLqf0-HnqZTI"
+        "externalLink": "https://drive.google.com/file/d/1j_HTli1DO0NwQzq3ursYzn4RhDlWWhXF/view?usp=sharing"
       },
       {
         "id": "project-denstar",
