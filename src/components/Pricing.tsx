@@ -81,7 +81,7 @@ export default function Pricing({ content }: PricingProps) {
               </div>
               
               <div className="planPeriod">
-                {currency === "INR" ? `${plan.period} + taxes` : `${plan.period} (USD)`}
+                {currency === "INR" ? `${plan.period} ` : `${plan.period} (USD)`}
               </div>
               
               <div className="planDivider"></div>
