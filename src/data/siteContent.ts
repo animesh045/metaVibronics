@@ -6,6 +6,7 @@ export interface Founder {
   email: string;
 }
 
+
 export interface ServiceCard {
   id: string;
   num: string;
