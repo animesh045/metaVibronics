@@ -410,7 +410,7 @@ export const defaultSiteContent: SiteContent = {
           "Packaging"
         ],
         "imageUrl": "/assets/work/lur.png",
-        "externalLink": "https://lurance.com"
+        "externalLink": "https://drive.google.com/drive/folders/1_TMqws7N7PfAI0R4egk4WLqf0-HnqZTI"
       },
       {
         "id": "project-denstar",
