@@ -373,7 +373,7 @@ export const defaultSiteContent: SiteContent = {
         "client": "Thriller",
         "title": "Thriller",
         "brief": "",
-        "imageUrl": "/assets/work/fourthx.jpg",
+        "imageUrl": "/assets/work/thri.png",
         "externalLink": "https://drive.google.com/drive/folders/1xxARoFHLBVyRAa4h1BeQ3pwouXrG-rBc",
         "tags": [
           "General"
@@ -406,7 +406,7 @@ export const defaultSiteContent: SiteContent = {
         "client": "Inter College Youth Festival",
         "title": "Rhythm - Annual Fest",
         "brief": "",
-        "imageUrl": "/assets/work/fourthx.jpg",
+        "imageUrl": "/assets/work/rhy.png",
         "externalLink": "https://drive.google.com/drive/folders/13wvfQVjqBx1ukxCHMNQMxFsyXjtpdO2t",
         "tags": [
           "General"
