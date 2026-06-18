@@ -161,7 +161,7 @@ export const defaultSiteContent: SiteContent = {
   "hero": {
     "eyebrow": "Brand · Communication · Growth Studio",
     "titleHtml": "Building<br>brands<br>that<br>last.",
-    "subtitle": "Two founders. Five disciplines. One studio that treats your brand like it's our own — because we built ours the same way.",
+    "subtitle": "Thoughtful strategy. Purposeful design. Brands built to endure.",
     "stats": [
       {
         "value": "20+",
@@ -211,7 +211,7 @@ export const defaultSiteContent: SiteContent = {
   },
   "about": {
     "eyebrow": "Meet the Founders",
-    "headingHtml": "Systems drive growth. Stories build connection.  <em> We bring both to every brand. </em>",
+    "headingHtml": "Systems drive growth. Stories build connection.  <em>     We bring both to every brand. </em>",
     "founders": [
       {
         "name": "Animesh Lodhi",
@@ -231,7 +231,7 @@ export const defaultSiteContent: SiteContent = {
       },
       {
         "name": "Bhumi Gupta",
-        "role": "Co-Founder · Creative Strategy & Communication Lead",
+        "role": "Co-Founder · Creative Strategy & Brand Lead",
         "bio": "Brand designer, content strategist, and published author. Leads brand identity, copywriting, publication design, and creative direction. Her work spans fragrance packaging (Lurance), health supplement communication (BioAro), influencer content systems, and editorial storytelling across 6+ organisations.",
         "skills": [
           "Brand Identity",
