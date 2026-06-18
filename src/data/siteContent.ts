@@ -163,11 +163,12 @@ export const defaultSiteContent: SiteContent = {
     "subtitle": "Two founders. Five disciplines. One studio that treats your brand like it's our own — because we built ours the same way.",
     "stats": [
       {
-        "value": "15+",
+        "value": "20+",
         "label": "Brands Served"
+        "highlighted": true
       },
       {
-        "value": "200+",
+        "value": "400+",
         "label": "Creative Assets"
       },
       {
@@ -200,6 +201,10 @@ export const defaultSiteContent: SiteContent = {
       {
         "name": "Production & Packaging",
         "description": "Print · Packaging · Event Branding"
+      }
+      {
+        "name": "Video Editing",
+        "description": "Reels · Shorts · Ads"
       }
     ]
   },
