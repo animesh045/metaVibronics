@@ -754,7 +754,7 @@ export const defaultSiteContent: SiteContent = {
         ]
       }
     ],
-    "note": "Packages are customisable. Packages exclude taxes. Advertising budgets, third-party software subscriptions, and media spend are billed separately and are not included in retainers."
+    "note": "Packages are customisable. Advertising budgets, third-party software subscriptions, and media spend are billed separately and are not included in retainers."
   },
   "contact": {
     "eyebrow": "Contact",
