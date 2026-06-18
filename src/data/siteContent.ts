@@ -211,7 +211,7 @@ export const defaultSiteContent: SiteContent = {
   },
   "about": {
     "eyebrow": "Meet the Founders",
-    "headingHtml": "Two founders. One studio. Every project. <em>Every project.</em>",
+    "headingHtml": "Systems drive growth. Stories build connection. " <em>We bring both to every brand.</em>",
     "founders": [
       {
         "name": "Animesh Lodhi",
