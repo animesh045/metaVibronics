@@ -389,7 +389,7 @@ export const defaultSiteContent: SiteContent = {
           "SaaS",
           "Content Strategy"
         ],
-        "imageUrl": "/assets/work/fourthx.jpg",
+        "imageUrl": "/assets/work/fourthx.png",
         "externalLink": "https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
       },
       {
@@ -429,7 +429,7 @@ export const defaultSiteContent: SiteContent = {
           "Healthcare",
           "Brand System"
         ],
-        "imageUrl": "/assets/work/denstar.jpg",
+        "imageUrl": "/assets/work/denstar.png",
         "externalLink": "https://drive.google.com/drive/folders/1KcEafTzC7Dm7mJvEnOJ3-PiGBpo9gphN"
       },
       {
@@ -447,7 +447,7 @@ export const defaultSiteContent: SiteContent = {
           "Construction",
           "B2B Brand"
         ],
-        "imageUrl": "/assets/work/jmc.jpg",
+        "imageUrl": "/assets/work/jmc.png",
         "externalLink": "https://drive.google.com/drive/folders/1CUII6835TazoPrZcpDDcx5dcYUXYyX-a"
       },
       {
@@ -475,7 +475,7 @@ export const defaultSiteContent: SiteContent = {
         "client": "BhaavTharang",
         "title": "Instagram Profile Optimization",
         "brief": "",
-        "imageUrl": "/assets/work/fourthx.jpg",
+        "imageUrl": "/assets/work/bhaav.png",
         "externalLink": "https://drive.google.com/drive/folders/1P2VIafqNEwcX0QIlCRsRbx0kzQoclARy",
         "tags": [
           "Instagram",
