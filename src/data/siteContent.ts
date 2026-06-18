@@ -409,7 +409,7 @@ export const defaultSiteContent: SiteContent = {
           "Fragrance",
           "Packaging"
         ],
-        "imageUrl": "/assets/work/lurance.jpg",
+        "imageUrl": "/assets/work/lur.png",
         "externalLink": "https://lurance.com"
       },
       {
@@ -467,7 +467,7 @@ export const defaultSiteContent: SiteContent = {
           "Personal Brand",
           "Author"
         ],
-        "imageUrl": "/assets/work/gurusahiba.jpg",
+        "imageUrl": "/assets/work/guru.png",
         "externalLink": "https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
       },
       {
