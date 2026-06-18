@@ -354,24 +354,32 @@ export const defaultSiteContent: SiteContent = {
     "description": "Every project below started with a 15-minute conversation. These are the brands we've built, grown, and made memorable.",
     "projects": [
       {
-        "id": "project-bioaro",
-        "client": "BioAro",
-        "title": "BioAro Health",
-        "brief": "Product communication and catalogue design for a complete health supplement portfolio — maintaining clinical precision and premium positioning across every SKU.",
-        "deliverables": [
-          "Product cards for 8+ SKUs (Longevity+, PurMidine, CREAGEN range, CellVivo)",
-          "Product catalogue",
-          "Ingredient communication",
-          "Packaging layouts",
-          "Brand consistency across all formats"
-        ],
+        "id": "project-1781805773469",
+        "client": "WurkinProgress",
+        "title": "WurkinProgress",
+        "brief": "",
+        "imageUrl": "/assets/work/fourthx.jpg",
+        "externalLink": "https://drive.google.com/drive/folders/1Tug2wif5E6lgIjsPLU5cfOeY_HlCcOVC",
         "tags": [
-          "International",
-          "Health & Nutrition"
+          "General"
         ],
-        "isFeatured": false,
-        "imageUrl": "/assets/work/bioaro.png",
-        "externalLink": "https://drive.google.com/drive/folders/1uU8ESnOxvvaj83QqYRcRtkHhCsP9UGAB?usp=drive_link"
+        "deliverables": [
+          "Creative Design"
+        ]
+      },
+       {
+        "id": "project-1781805851562",
+        "client": "Thriller",
+        "title": "Thriller",
+        "brief": "",
+        "imageUrl": "/assets/work/fourthx.jpg",
+        "externalLink": "https://drive.google.com/drive/folders/1xxARoFHLBVyRAa4h1BeQ3pwouXrG-rBc",
+        "tags": [
+          "General"
+        ],
+        "deliverables": [
+          "Creative Design"
+        ]
       },
       {
         "id": "project-fourthx",
@@ -392,25 +400,58 @@ export const defaultSiteContent: SiteContent = {
         "imageUrl": "/assets/work/fourthx.png",
         "externalLink": "https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
       },
-      {
-        "id": "project-gurusahiba",
-        "client": "GuruSahiba Kaur",
-        "title": "GuruSahiba Kaur",
-        "brief": "Instagram brand identity and content system for a life coach and published author.",
+       {
+        "id": "project-1781805925539",
+        "client": "Inter College Youth Festival",
+        "title": "Rhythm - Annual Fest",
+        "brief": "",
+        "imageUrl": "/assets/work/fourthx.jpg",
+        "externalLink": "https://drive.google.com/drive/folders/13wvfQVjqBx1ukxCHMNQMxFsyXjtpdO2t",
+        "tags": [
+          "General"
+        ],
         "deliverables": [
-          "Highlight covers",
-          "Quote posts",
-          "Tip carousels",
-          "Reel covers",
-          "Grid aesthetic",
-          "Affirmations series"
+          "Creative Design"
+        ]
+      },
+      {
+        "id": "project-1781719604552",
+        "client": "BhaavTharang",
+        "title": "Instagram Profile Optimization",
+        "brief": "",
+        "imageUrl": "/assets/work/bhaav.png",
+        "externalLink": "https://drive.google.com/drive/folders/1P2VIafqNEwcX0QIlCRsRbx0kzQoclARy",
+        "tags": [
+          "Instagram",
+          "Brand Direction"
+        ],
+        "deliverables": [
+          "Highlight Cover",
+          "Reel Cover",
+          "Brand Identity",
+          "Brand Direction",
+          "Linktree"
+        ]
+      },
+      {
+        "id": "project-bioaro",
+        "client": "BioAro",
+        "title": "BioAro Health",
+        "brief": "Product communication and catalogue design for a complete health supplement portfolio — maintaining clinical precision and premium positioning across every SKU.",
+        "deliverables": [
+          "Product cards for 8+ SKUs (Longevity+, PurMidine, CREAGEN range, CellVivo)",
+          "Product catalogue",
+          "Ingredient communication",
+          "Packaging layouts",
+          "Brand consistency across all formats"
         ],
         "tags": [
-          "Personal Brand",
-          "Author"
+          "International",
+          "Health & Nutrition"
         ],
-        "imageUrl": "/assets/work/guru.png",
-        "externalLink": "https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
+        "isFeatured": false,
+        "imageUrl": "/assets/work/bioaro.png",
+        "externalLink": "https://drive.google.com/drive/folders/1uU8ESnOxvvaj83QqYRcRtkHhCsP9UGAB?usp=drive_link"
       },
       {
         "id": "project-lurance",
@@ -490,23 +531,34 @@ export const defaultSiteContent: SiteContent = {
         "imageUrl": "/assets/work/guru.png",
         "externalLink": "https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
       },
+           
       {
-        "id": "project-1781719604552",
-        "client": "BhaavTharang",
-        "title": "Instagram Profile Optimization",
+        "id": "project-1781805655858",
+        "client": "Multiple brands",
+        "title": "Multiple Brands",
         "brief": "",
-        "imageUrl": "/assets/work/bhaav.png",
-        "externalLink": "https://drive.google.com/drive/folders/1P2VIafqNEwcX0QIlCRsRbx0kzQoclARy",
+        "imageUrl": "/assets/work/fourthx.jpg",
+        "externalLink": "https://drive.google.com/drive/folders/1qymwI-QfjWaGb3x8l7u_xSo_9AZyCNWt",
         "tags": [
-          "Instagram",
-          "Brand Direction"
+          "General"
         ],
         "deliverables": [
-          "Highlight Cover",
-          "Reel Cover",
-          "Brand Identity",
-          "Brand Direction",
-          "Linktree"
+          "Creative Design"
+        ]
+      },
+
+      {
+        "id": "project-1781805973702",
+        "client": "Spec Work",
+        "title": "Spec Work",
+        "brief": "",
+        "imageUrl": "/assets/work/fourthx.jpg",
+        "externalLink": "https://drive.google.com/drive/folders/1q57thnhKB3QI6cjOmWscuoC7XAWaC3Nd",
+        "tags": [
+          "General"
+        ],
+        "deliverables": [
+          "Creative Design"
         ]
       }
     ]
