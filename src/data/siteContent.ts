@@ -216,37 +216,39 @@ export const defaultSiteContent: SiteContent = {
       {
         "name": "Animesh Lodhi",
         "role": "Founder · Creative Systems & Growth Lead",
-        "bio": "Computer Science engineer who built Meta Vibronics from zero while completing his degree. Leads strategy, UI/UX, performance marketing, and creative operations. GATE CS qualified (2025 & 2026). Delivered 100+ design assets. Managed ad campaigns achieving ₹1.11 CPC — across Meta, Google, and LinkedIn.",
+        "bio": "Animesh blends strategy, digital experiences, and growth to build brands that are scalable and easy to navigate. His work spans UI/UX, visual systems, performance campaigns, and cross-platform communication across multiple industries.",
         "skills": [
           "Brand Systems",
-          "UI/UX · Figma",
-          "Meta & Google Ads",
-          "Adobe InDesign",
-          "Canva Pro",
+          "UI/UX",
           "Performance Marketing",
+          "Figma",
+          "Meta & Google Ads",
+          "Canva Pro",
+          "Adobe InDesign",
           "Creative Operations",
-          "CapCut · InShot"
+          "CapCut",
+          "InShot"
         ],
         "email": "animesh.metavibronics@gmail.com"
       },
       {
         "name": "Bhumi Gupta",
         "role": "Co-Founder · Creative Strategy & Brand Lead",
-        "bio": "Brand designer, content strategist, and published author. Leads brand identity, copywriting, publication design, and creative direction. Her work spans fragrance packaging (Lurance), health supplement communication (BioAro), influencer content systems, and editorial storytelling across 6+ organisations.",
+        "bio": "Bhumi blends design, content, and communication to build cohesive brand experiences. From visual identities and packaging to publication design and content systems, she focuses on creating work that is thoughtful, purposeful, and easy to connect with.",
         "skills": [
           "Brand Identity",
           "Packaging Design",
           "Copywriting",
           "Content Strategy",
           "Publication Design",
+          "Creative Direction",
           "Adobe Illustrator",
-          "Canva Pro",
-          "Brand Storytelling"
+          "Canva Pro"
         ],
         "email": "bhumi.metavibronics@gmail.com"
       }
     ],
-    "quoteHtml": "Systems <em>+</em> Story <em>=</em> Brands that connect, communicate, and grow."
+    "quoteHtml": "Our strengths are different, but our approach is shared: build brands with clarity, consistency, and intention."
   },
   "services": {
     "eyebrow": "What We Do",
@@ -382,8 +384,8 @@ export const defaultSiteContent: SiteContent = {
       },
        {
         "id": "project-1781805851562",
-        "client": "Thriller",
-        "title": "Thriller",
+        "client": "Thrilerrr",
+        "title": "Thrilerrr",
         "brief": "Freelance content system designed for a Gen-Z lifestyle brand via Webfynd Digital. The brief required balancing a sensitive topic with visual clarity and tonal sensitivity, while keeping every piece consistent with the brand's existing voice and aesthetic. Delivered the full 20-piece system on a tight turnaround.",
         "imageUrl": "/assets/work/thri.png",
         "externalLink": "https://drive.google.com/drive/folders/1xxARoFHLBVyRAa4h1BeQ3pwouXrG-rBc",
@@ -628,33 +630,33 @@ export const defaultSiteContent: SiteContent = {
     "items": [
       {
         "num": "01",
-        "title": "One unified brand system",
-        "desc": "Not scattered posts from three different people."
+        "title": "One cohesive brand system",
+        "desc": "Digital, print, motion, and content—all aligned."
       },
       {
         "num": "02",
-        "title": "Two specialists, not one generalist",
-        "desc": "Strategy + design + content under one brief."
+        "title": "Multidisciplinary expertise",
+        "desc": "Strategy, design, and communication working together."
       },
       {
         "num": "03",
-        "title": "Two founders on every project",
-        "desc": "No juniors. No handoffs. No guesswork."
+        "title": "Direct collaboration",
+        "desc": "Fewer handoffs. More clarity."
       },
       {
         "num": "04",
-        "title": "Print-ready and digital-ready",
-        "desc": "Same brief, every format, zero extra briefing."
+        "title": "Ready for every touchpoint",
+        "desc": "From Instagram to packaging to presentations."
       },
       {
         "num": "05",
-        "title": "Faster execution, less coordination",
-        "desc": "You focus on your business. We handle the brand."
+        "title": "Faster execution",
+        "desc": "Less coordination, more momentum."
       },
       {
         "num": "06",
-        "title": "Work that looks international",
-        "desc": "Because some of it already is."
+        "title": "Work built to scale",
+        "desc": "Systems designed to grow with your business."
       }
     ]
   },
@@ -723,7 +725,7 @@ export const defaultSiteContent: SiteContent = {
         ]
       },
       {
-        "name": "Enterprises",
+        "name": "Enterprise",
         "priceINR": "₹12,999",
         "priceUSD": "$259",
         "period": "per month",
@@ -752,7 +754,7 @@ export const defaultSiteContent: SiteContent = {
         ]
       }
     ],
-    "note": "All services are customisable — only pay for what you need. Packages exclude taxes. Ad budget is decided by you, separate from retainer fees. GST invoice available at 18% extra."
+    "note": "Packages are customisable. Packages exclude taxes. Advertising budgets, third-party software subscriptions, and media spend are billed separately and are not included in retainers."
   },
   "contact": {
     "eyebrow": "Contact",
