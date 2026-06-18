@@ -393,6 +393,26 @@ export const defaultSiteContent: SiteContent = {
         "externalLink": "https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
       },
       {
+        "id": "project-gurusahiba",
+        "client": "GuruSahiba Kaur",
+        "title": "GuruSahiba Kaur",
+        "brief": "Instagram brand identity and content system for a life coach and published author.",
+        "deliverables": [
+          "Highlight covers",
+          "Quote posts",
+          "Tip carousels",
+          "Reel covers",
+          "Grid aesthetic",
+          "Affirmations series"
+        ],
+        "tags": [
+          "Personal Brand",
+          "Author"
+        ],
+        "imageUrl": "/assets/work/guru.png",
+        "externalLink": "https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
+      },
+      {
         "id": "project-lurance",
         "client": "Lurance Fragrances",
         "title": "Lurance Fragrances",
