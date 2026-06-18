@@ -250,7 +250,8 @@
   margin-bottom: 60px; gap: 40px;
 }
 .workIntro h2 { font-size: clamp(36px, 4vw, 60px); }
-.workIntro p { font-size: 14px; color: var(--text-secondary); max-width: 360px; line-height: 1.7; }
+.workIntro p, .workIntroDesc { font-size: 14px; color: var(--text-secondary); max-width: 360px; line-height: 1.7; }
+.workIntroDesc { text-align: right; }
 .workGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .workCard {
   background: var(--bg-card); border: 1px solid var(--border-color);
@@ -266,7 +267,7 @@
   border-color: var(--border-hover);
 }
 .workImg {
-  aspect-ratio: 16/10;
+  aspect-ratio: 1/1;
   position: relative;
   overflow: hidden;
   background: var(--bg-secondary);
@@ -295,7 +296,7 @@
 .workDeliverables { font-size: 12px; color: var(--text-secondary); line-height: 1.7; padding-top: 16px; border-top: 1px solid var(--border-color); margin-top: auto; }
 
 .workCard.featured { grid-column: span 2; }
-.workCard.featured .workImg { aspect-ratio: 16/7; }
+.workCard.featured .workImg { aspect-ratio: 1/1; }
 
 /* ── RESULTS ─────────────────────────────────────── */
 .resultsStrip {
@@ -611,27 +612,75 @@
   .industries { grid-template-columns: repeat(2, 1fr); }
   .indItem:nth-child(4n) { border-right: 1px solid var(--border-color); }
   .indItem:nth-child(2n) { border-right: none; }
+  .getsSection { padding: 80px 40px; }
+  .resultsStrip { padding: 80px 40px; }
+  
+  .processStep {
+    padding: 32px 20px !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .processStep:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  .processStep + .processStep {
+    padding-left: 20px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .contactInfo h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workIntro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .workIntroDesc {
+    text-align: left;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
   .navbar { padding: 0 24px; }
-  .navLinks, .navCta, .themeToggle { display: none; }
+  .navLinks, .navCta, .themeToggle, .navSecondaryCta { display: none; }
   .hamburger { display: flex; }
   .workGrid, .pricingGrid, .svcGrid { grid-template-columns: 1fr; }
   .workCard.featured { grid-column: span 1; }
   .statsGrid { grid-template-columns: 1fr; }
   .processGrid { grid-template-columns: 1fr; }
-  .processStep { padding: 32px 0; border-right: none; border-bottom: 1px solid var(--border-color); }
-  .processStep:last-child { border-bottom: none; }
-  .processStep + .processStep { padding-left: 0; }
+  .processStep { padding: 24px 0 !important; border-right: none !important; border-bottom: 1px solid var(--border-color) !important; }
+  .processStep:last-child { border-bottom: none !important; }
+  .processStep + .processStep { padding-left: 0 !important; }
+  .heroLeft { padding: 48px 20px; }
   .heroStats { grid-template-columns: 1fr 1fr; gap: 24px; }
   .formRow { grid-template-columns: 1fr; }
   .footerInner { flex-direction: column; align-items: flex-start; }
   .footerLinks { flex-direction: column; gap: 12px; }
   .industries { grid-template-columns: 1fr; }
   .indItem { border-right: none !important; }
-  .getItem { padding: 24px 16px; }
+  .getItem { padding: 20px 16px; }
   .customizerPanel { width: 100%; }
+  
+  .getsSection { padding: 60px 20px; }
+  .resultsStrip { padding: 60px 20px; }
+  .founderCard { padding: 24px; }
+  .svcCard { padding: 24px 20px; }
+  .indItem { padding: 16px; }
+  .statBox { padding: 24px; }
+  .planCard { padding: 32px 20px; }
+  .formGroup input, .formGroup textarea, .formGroup select { font-size: 16px; }
 }
 
 /* ── PROJECT DETAIL MODAL ───────────────────────── */
@@ -695,6 +744,7 @@
   position: relative;
   background: var(--bg-secondary);
   border-right: 1px solid var(--border-color);
+  aspect-ratio: 1/1;
 }
 .projectModalImage img {
   width: 100%;
@@ -793,7 +843,7 @@
     grid-template-columns: 1fr;
   }
   .projectModalImage {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
@@ -801,4 +851,5 @@
     padding: 32px;
   }
 }
+
 

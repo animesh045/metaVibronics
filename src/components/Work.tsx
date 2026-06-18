@@ -56,11 +56,11 @@ export default function Work({ content }: WorkProps) {
             />
           </div>
           <p 
+            className="workIntroDesc"
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? "translateY(0)" : "translateY(20px)",
-              transition: "opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s",
-              textAlign: "right"
+              transition: "opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s"
             }}
           >
             {content.description}

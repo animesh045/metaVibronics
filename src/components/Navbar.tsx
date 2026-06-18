@@ -54,12 +54,8 @@ export default function Navbar({ branding, navigation }: NavbarProps) {
   return (
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        <a href="#home" className="navLogo" style={{ display: "flex", alignItems: "center" }}>
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: "10px", display: "inline-block", verticalAlign: "middle" }}>
-            <circle cx="16" cy="16" r="14" stroke="#00C2FF" strokeWidth="2.5" />
-            <path d="M10 11L16 21L22 11" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="16" cy="21" r="2.5" fill="#00C2FF" />
-          </svg>
+        <a href="#home" className="navLogo" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <img src="/assets/work/logo.png" alt="Meta Vibronics Logo" style={{ height: "32px", width: "auto", display: "block" }} />
           <span style={{ fontSize: "16px", fontWeight: 800, letterSpacing: "-0.01em", textTransform: "none" }}>
             META<span style={{ color: "#00C2FF" }}>.</span>VIBRONICS
           </span>
