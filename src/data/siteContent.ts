@@ -164,7 +164,7 @@ export const defaultSiteContent: SiteContent = {
     "stats": [
       {
         "value": "20+",
-        "label": "Brands Served"
+        "label": "Brands Served",
         "highlighted": true
       },
       {
@@ -201,7 +201,7 @@ export const defaultSiteContent: SiteContent = {
       {
         "name": "Production & Packaging",
         "description": "Print · Packaging · Event Branding"
-      }
+      },
       {
         "name": "Video Editing",
         "description": "Reels · Shorts · Ads"
@@ -369,8 +369,8 @@ export const defaultSiteContent: SiteContent = {
           "International",
           "Health & Nutrition"
         ],
-        "isFeatured": true,
-        "imageUrl": "/assets/work/bioaro.jpg",
+        "isFeatured": false,
+        "imageUrl": "/assets/work/bioaro.png",
         "externalLink": "https://drive.google.com/drive/folders/1uU8ESnOxvvaj83QqYRcRtkHhCsP9UGAB?usp=drive_link"
       },
       {
