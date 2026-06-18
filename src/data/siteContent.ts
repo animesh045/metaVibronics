@@ -358,28 +358,48 @@ export const defaultSiteContent: SiteContent = {
         "id": "project-1781805773469",
         "client": "WurkinProgress",
         "title": "WurkinProgress",
-        "brief": "",
+        "brief": "A one-month graphic design internship focused on supporting both digital and offline brand communication. Worked closely with the creative and brand teams to design campaign assets, build cohesive visual systems, and adapt branding across multiple formats including social media, packaging, menus, and event collaterals. The role emphasized strong design fundamentals, consistency, and iterative feedback-based execution across multiple live projects.",
         "imageUrl": "/assets/work/fourthx.jpg",
         "externalLink": "https://drive.google.com/drive/folders/1Tug2wif5E6lgIjsPLU5cfOeY_HlCcOVC",
         "tags": [
-          "General"
+          "Graphic Design",
+    "Brand Identity",
+    "Social Media Design",
+    "Print Design",
+    "Packaging Design",
+    "Visual Research",
+    "Marketing Collaterals",
+    "Campaign Design"
         ],
         "deliverables": [
-          "Creative Design"
+       "Social media creatives (static posts & carousels)",
+    "Campaign assets for digital marketing",
+    "Brand identity support (typography, layouts, visual systems)",
+    "Offline collateral design (menus, posters, packaging, event creatives)",
+    "Moodboards and visual references",
+    "Multi-format creative adaptations"
         ]
       },
        {
         "id": "project-1781805851562",
         "client": "Thriller",
         "title": "Thriller",
-        "brief": "",
+        "brief": "Freelance content system designed for a Gen-Z lifestyle brand via Webfynd Digital. The brief required balancing a sensitive topic with visual clarity and tonal sensitivity, while keeping every piece consistent with the brand's existing voice and aesthetic. Delivered the full 20-piece system on a tight turnaround.",
         "imageUrl": "/assets/work/thri.png",
         "externalLink": "https://drive.google.com/drive/folders/1xxARoFHLBVyRAa4h1BeQ3pwouXrG-rBc",
         "tags": [
-          "General"
+         "Social Media Design",
+    "Instagram Carousel Design",
+    "Reel Cover Design",
+    "Content Systems",
+    "Gen Z Branding",
+    "Brand Consistency",
+    "Freelance Design"
         ],
         "deliverables": [
-          "Creative Design"
+       "Instagram carousel posts",
+    "Animated reel covers",
+    "20-piece content system"
         ]
       },
       {
@@ -552,14 +572,21 @@ export const defaultSiteContent: SiteContent = {
         "id": "project-1781805973702",
         "client": "Spec Work",
         "title": "Spec Work",
-        "brief": "",
+        "brief": "A curated collection of creative assessments and speculative projects completed for multiple agencies and brands, spanning graphic design, social media marketing, video editing, and content strategy. These projects showcase adaptability across industries including personal branding, fitness, editorial media, and digital marketing, with a focus on visual storytelling, conversion-driven design, and platform-specific content execution.",
         "imageUrl": "/assets/work/fourthx.jpg",
         "externalLink": "https://drive.google.com/drive/folders/1q57thnhKB3QI6cjOmWscuoC7XAWaC3Nd",
         "tags": [
-          "General"
+          "Graphic Design", "Social Media Design", "Brand Adaptation", "Video Editing", "Email Design", "Content Strategy", "Marketing Creatives"
         ],
         "deliverables": [
-          "Creative Design"
+          "Carousel Covers",
+  "Social Media Creatives",
+  "Short-form Video Editing",
+  "Brand Promotional Posts",
+  "Email Marketing Layouts",
+  "Campaign Mockups",
+  "Content Strategy",
+  "Growth Frameworks"
         ]
       }
     ]
