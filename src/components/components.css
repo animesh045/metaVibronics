@@ -684,6 +684,7 @@
 }
 
 /* ── PROJECT DETAIL MODAL ───────────────────────── */
+/* ── PROJECT DETAIL MODAL ───────────────────────── */
 .projectModalOverlay {
   position: fixed;
   inset: 0;
@@ -695,19 +696,23 @@
   justify-content: center;
   z-index: 1000;
   padding: 40px 20px;
-  overflow-y: auto;
+  overflow: hidden;
   animation: fadeIn 0.3s ease-out forwards;
 }
 
 .projectModalContent {
   width: 100%;
   max-width: 960px;
-  background: var(--bg-card);
+  background: var(--bg-card) !important;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   position: relative;
   box-shadow: var(--shadow-lg);
   animation: scaleUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .projectModalClose {
@@ -734,8 +739,8 @@
 
 .projectModalBody {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  min-height: 500px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  height: 100%;
   overflow: hidden;
   border-radius: var(--radius-lg);
 }
@@ -744,7 +749,8 @@
   position: relative;
   background: var(--bg-secondary);
   border-right: 1px solid var(--border-color);
-  aspect-ratio: 1/1;
+  height: 100%;
+  width: 100%;
 }
 .projectModalImage img {
   width: 100%;
@@ -757,7 +763,9 @@
   padding: 48px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .projectModalClient {
@@ -839,16 +847,38 @@
 }
 
 @media (max-width: 900px) {
+  .projectModalOverlay {
+    padding: 20px 12px;
+    align-items: center;
+  }
+  .projectModalContent {
+    max-height: 90vh;
+  }
   .projectModalBody {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
   }
   .projectModalImage {
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/10;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
   .projectModalDetails {
-    padding: 32px;
+    padding: 24px;
+    overflow-y: visible;
+    height: auto;
+  }
+  .projectModalClose {
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
   }
 }
 

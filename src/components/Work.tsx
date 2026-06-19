@@ -133,9 +133,9 @@ export default function Work({ content }: WorkProps) {
               </div>
               
               <div className="projectModalDetails">
-                <div style={{ marginBottom: "12px" }}>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "16px" }}>
                   {selectedProject.tags.map((tag, idx) => (
-                    <span key={idx} className="tag tag-blue" style={{ marginRight: "8px" }}>
+                    <span key={idx} className="tag tag-blue">
                       {tag}
                     </span>
                   ))}
