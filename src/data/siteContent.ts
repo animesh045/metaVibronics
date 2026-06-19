@@ -405,57 +405,83 @@ export const defaultSiteContent: SiteContent = {
         ]
       },
       {
-        "id": "project-fourthx",
-        "client": "FourthX Technologies",
-        "title": "FourthX Technologies",
-        "brief": "Revived and systematised the brand's Instagram presence through a structured 30-day content strategy.",
-        "deliverables": [
-          "30-day content system",
-          "Daily reels, carousels & statics",
-          "Tech copy",
-          "3D visuals",
-          "Fintech, HealthTech & Real Estate verticals"
-        ],
-        "tags": [
-          "SaaS",
-          "Content Strategy"
-        ],
-        "imageUrl": "/assets/work/fourthx.png",
-        "externalLink": "https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
-      },
+id: "project-fourthx",
+client: "FourthX Technologies",
+title: "FourthX Technologies",
+brief:
+"Revived and systematised FourthX Technologies' Instagram and social media presence through a structured 30-day content strategy. Planned, designed, and executed a complete content ecosystem including reels, static posts, educational carousels, and industry-focused visual storytelling to improve engagement and establish a consistent digital brand presence.",
+deliverables: [
+"30-Day Content Calendar",
+"Daily Reels",
+"Educational Carousels",
+"Static Social Media Posts",
+"Tech-focused Copywriting",
+"Content Research",
+"Brand Positioning"
+],
+tags: [
+"Social Media Management",
+"Content Strategy",
+"Instagram Growth",
+"SaaS Marketing",
+"Creative Direction"
+],
+imageUrl: "/assets/work/fourthx.png",
+externalLink:
+"https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
+},
        {
-        "id": "project-1781805925539",
-        "client": "Inter College Youth Festival",
-        "title": "Rhythm - Annual Fest",
-        "brief": "",
-        "imageUrl": "/assets/work/rhy.png",
-        "externalLink": "https://drive.google.com/drive/folders/13wvfQVjqBx1ukxCHMNQMxFsyXjtpdO2t",
-        "tags": [
-          "General"
-        ],
-        "deliverables": [
-          "Creative Design"
-        ]
-      },
-      {
-        "id": "project-1781719604552",
-        "client": "BhaavTharang",
-        "title": "Instagram Profile Optimization",
-        "brief": "",
-        "imageUrl": "/assets/work/bhaav.png",
-        "externalLink": "https://drive.google.com/drive/folders/1P2VIafqNEwcX0QIlCRsRbx0kzQoclARy",
-        "tags": [
-          "Instagram",
-          "Brand Direction"
-        ],
-        "deliverables": [
-          "Highlight Cover",
-          "Reel Cover",
-          "Brand Identity",
-          "Brand Direction",
-          "Linktree"
-        ]
-      },
+id: "project-1781805925539",
+client: "Inter College Youth Festival",
+title: "Rhythm - Annual Fest",
+brief:
+"Served as Head of Creative and Overall Student Coordinator for Rhythm, the Annual Inter-College Youth Festival. Led the complete creative ecosystem of the festival including branding, campaign strategy, social media promotions, sponsorship creatives, stage backdrops, certificates, standees, banners, merchandise, venue branding, and print production.",
+imageUrl: "/assets/work/rhy.png",
+externalLink:
+"https://drive.google.com/drive/folders/13wvfQVjqBx1ukxCHMNQMxFsyXjtpdO2t",
+tags: [
+"Creative Direction",
+"Event Branding",
+"Print Design",
+"Leadership",
+"Festival Management"
+],
+deliverables: [
+"Festival Brand Identity",
+"Social Media Campaigns",
+"Stage Backdrop Design",
+"Print-ready Banners",
+"Certificates",
+"Merchandise Graphics",
+"Venue Branding"
+]
+},
+     {
+id: "project-1781719604552",
+client: "BhaavTharang",
+title: "Instagram Profile Optimization",
+brief:
+"Developed a complete Instagram profile optimization and visual identity system for BhaavTharang. Created a cohesive brand experience through profile structuring, highlight covers, reel covers, visual direction, Linktree setup, and content branding to improve credibility and audience engagement.",
+imageUrl: "/assets/work/bhaav.png",
+externalLink:
+"https://drive.google.com/drive/folders/1P2VIafqNEwcX0QIlCRsRbx0kzQoclARy",
+tags: [
+"Instagram",
+"Brand Direction",
+"Profile Optimization",
+"Brand Identity",
+"Visual Design"
+],
+deliverables: [
+"Instagram Profile Optimization",
+"Highlight Cover Design",
+"Reel Cover System",
+"Brand Identity",
+"Brand Direction",
+"Linktree Setup",
+"Visual Consistency Framework"
+]
+},
       {
         "id": "project-bioaro",
         "client": "BioAro",
@@ -535,62 +561,84 @@ export const defaultSiteContent: SiteContent = {
         "externalLink": "https://drive.google.com/drive/folders/1CUII6835TazoPrZcpDDcx5dcYUXYyX-a"
       },
       {
-        "id": "project-gurusahiba",
-        "client": "GuruSahiba Kaur",
-        "title": "GuruSahiba Kaur",
-        "brief": "Instagram brand identity and content system for a life coach and published author.",
-        "deliverables": [
-          "Highlight covers",
-          "Quote posts",
-          "Tip carousels",
-          "Reel covers",
-          "Grid aesthetic",
-          "Affirmations series"
-        ],
-        "tags": [
-          "Personal Brand",
-          "Author"
-        ],
-        "imageUrl": "/assets/work/guru.png",
-        "externalLink": "https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
-      },
+id: "project-gurusahiba",
+client: "GuruSahiba Kaur",
+title: "GuruSahiba Kaur",
+brief:
+"Built and managed the complete personal brand ecosystem for GuruSahiba Kaur, a life coach and published author. Developed the brand identity, Instagram profile system, and a structured content strategy supported by a 30-day content calendar and audience-focused storytelling.",
+deliverables: [
+"Brand Identity Design",
+"Instagram Profile Optimization",
+"30-Day Content Calendar",
+"Content Strategy",
+"Educational Carousels",
+"Reel Covers",
+"Highlight Covers"
+],
+tags: [
+"Personal Branding",
+"Author",
+"Brand Identity",
+"Content Strategy",
+"Social Media Management"
+],
+imageUrl: "/assets/work/guru.png",
+externalLink:
+"https://drive.google.com/drive/folders/1WnwVt56gsZb-1hQwmXWTcvipPTgWVO5c"
+},
            
+     {
+id: "project-1781805655858",
+client: "Multiple Brands",
+title: "Multiple Brands",
+brief:
+"A collection of branding, campaign, and social media projects executed across entrepreneurship, FMCG, healthcare, education, wellness, automotive, and event management sectors. This body of work includes campaigns for E-Cell DCRUST, Patanjali-related concepts, automobile branding explorations, and marketing communication assets.",
+imageUrl: "/assets/work/fourthx.png",
+externalLink:
+"https://drive.google.com/drive/folders/1qymwI-QfjWaGb3x8l7u_xSo_9AZyCNWt",
+tags: [
+"Branding",
+"Marketing Design",
+"Automotive",
+"Campaign Design",
+"Print Design"
+],
+deliverables: [
+"E-Cell DCRUST Branding",
+"Event Creatives",
+"Patanjali Campaign Concepts",
+"Automobile Brand Designs",
+"Campaign Creatives",
+"Print Marketing Materials",
+"Social Media Assets"
+]
+},
       {
-        "id": "project-1781805655858",
-        "client": "Multiple brands",
-        "title": "Multiple Brands",
-        "brief": "",
-        "imageUrl": "/assets/work/fourthx.png",
-        "externalLink": "https://drive.google.com/drive/folders/1qymwI-QfjWaGb3x8l7u_xSo_9AZyCNWt",
-        "tags": [
-          "General"
-        ],
-        "deliverables": [
-          "Creative Design"
-        ]
-      },
-
-      {
-        "id": "project-1781805973702",
-        "client": "Spec Work",
-        "title": "Spec Work",
-        "brief": "A curated collection of creative assessments and speculative projects completed for multiple agencies and brands, spanning graphic design, social media marketing, video editing, and content strategy. These projects showcase adaptability across industries including personal branding, fitness, editorial media, and digital marketing, with a focus on visual storytelling, conversion-driven design, and platform-specific content execution.",
-        "imageUrl": "/assets/work/fourthx.png",
-        "externalLink": "https://drive.google.com/drive/folders/1q57thnhKB3QI6cjOmWscuoC7XAWaC3Nd",
-        "tags": [
-          "Graphic Design", "Social Media Design", "Brand Adaptation", "Video Editing", "Email Design", "Content Strategy", "Marketing Creatives"
-        ],
-        "deliverables": [
-          "Carousel Covers",
-  "Social Media Creatives",
-  "Short-form Video Editing",
-  "Brand Promotional Posts",
-  "Email Marketing Layouts",
-  "Campaign Mockups",
-  "Content Strategy",
-  "Growth Frameworks"
-        ]
-      }
+id: "project-1781805973702",
+client: "Spec Work",
+title: "Spec Work",
+brief:
+"A curated collection of creative assessments, speculative projects, and design challenges completed for agencies, startups, and emerging brands. Projects include fitness brands, protein and supplement brands, marketing creatives, and the logo design for Creatiwise, demonstrating versatility across multiple industries.",
+imageUrl: "/assets/work/fourthx.png",
+externalLink:
+"https://drive.google.com/drive/folders/1q57thnhKB3QI6cjOmWscuoC7XAWaC3Nd",
+tags: [
+"Graphic Design",
+"Logo Design",
+"Video Editing",
+"Content Strategy",
+"Marketing Creatives"
+],
+deliverables: [
+"Creatiwise Logo Design",
+"Protein Brand Campaigns",
+"Supplement Brand Creatives",
+"Social Media Creatives",
+"Short-form Video Editing",
+"Campaign Mockups",
+"Content Strategy Frameworks"
+]
+}
     ]
   },
   "results": {
