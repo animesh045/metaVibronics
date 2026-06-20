@@ -746,7 +746,7 @@ deliverables: [
     "plans": [
       {
         "name": "Startup",
-        "priceINR": "₹4,999",
+        "priceINR": "₹6,999",
         "priceUSD": "$99",
         "period": "per month",
         "features": [
@@ -760,7 +760,7 @@ deliverables: [
       },
       {
         "name": "Business",
-        "priceINR": "₹8,999",
+        "priceINR": "₹10,999",
         "priceUSD": "$179",
         "period": "per month",
         "features": [
@@ -774,7 +774,7 @@ deliverables: [
       },
       {
         "name": "Enterprise",
-        "priceINR": "₹12,999",
+        "priceINR": "₹15,999",
         "priceUSD": "$259",
         "period": "per month",
         "isFeatured": true,
@@ -789,7 +789,7 @@ deliverables: [
       },
       {
         "name": "Platinum",
-        "priceINR": "₹19,999",
+        "priceINR": "₹22,999",
         "priceUSD": "$399",
         "period": "per month",
         "features": [
