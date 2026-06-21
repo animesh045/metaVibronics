@@ -68,7 +68,9 @@ export default function Work({ content }: WorkProps) {
         </div>
 
         <div className="workGrid">
-          {content.projects.map((project, idx) => {
+         {content.projects
+  .filter((project) => !project.hidden)
+  .map((project, idx) => {
             const delay = (idx % 3) * 0.15;
             return (
               <div 
