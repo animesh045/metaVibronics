@@ -593,7 +593,7 @@ client: "Multiple Brands",
 title: "Multiple Brands",
 brief:
 "A collection of branding, campaign, and social media projects executed across entrepreneurship, FMCG, healthcare, education, wellness, automotive, and event management sectors. This body of work includes campaigns for E-Cell DCRUST, Patanjali-related concepts, automobile branding explorations, and marketing communication assets.",
-imageUrl: "/assets/work/fourthx.png",
+imageUrl: "/assets/work/mul.png",
 externalLink:
 "https://drive.google.com/drive/folders/1qymwI-QfjWaGb3x8l7u_xSo_9AZyCNWt",
 tags: [
@@ -619,7 +619,7 @@ client: "Spec Work",
 title: "Spec Work",
 brief:
 "A curated collection of creative assessments, speculative projects, and design challenges completed for agencies, startups, and emerging brands. Projects include fitness brands, protein and supplement brands, marketing creatives, and the logo design for Creatiwise, demonstrating versatility across multiple industries.",
-imageUrl: "/assets/work/fourthx.png",
+imageUrl: "/assets/work/spec.png",
 externalLink:
 "https://drive.google.com/drive/folders/1q57thnhKB3QI6cjOmWscuoC7XAWaC3Nd",
 tags: [
