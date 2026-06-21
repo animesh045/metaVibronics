@@ -361,7 +361,7 @@ export const defaultSiteContent: SiteContent = {
         "client": "WurkinProgress",
         "title": "WurkinProgress",
         "brief": "A one-month graphic design internship focused on supporting both digital and offline brand communication. Worked closely with the creative and brand teams to design campaign assets, build cohesive visual systems, and adapt branding across multiple formats including social media, packaging, menus, and event collaterals. The role emphasized strong design fundamentals, consistency, and iterative feedback-based execution across multiple live projects.",
-        "imageUrl": "/assets/work/fourthx.png",
+        "imageUrl": "/assets/work/wp.png",
         "externalLink": "https://drive.google.com/drive/folders/1Tug2wif5E6lgIjsPLU5cfOeY_HlCcOVC",
         "tags": [
           "Graphic Design",
