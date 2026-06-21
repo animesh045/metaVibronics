@@ -29,6 +29,7 @@ export interface Project {
   isFeatured?: boolean;
   imageUrl: string;
   externalLink?: string;
+  hidden?: boolean;
 }
 
 export interface StatItem {
@@ -381,6 +382,7 @@ export const defaultSiteContent: SiteContent = {
     "Moodboards and visual references",
     "Multi-format creative adaptations"
         ]
+        hidden : true,
       },
        {
         "id": "project-1781805851562",
@@ -403,6 +405,7 @@ export const defaultSiteContent: SiteContent = {
     "Animated reel covers",
     "20-piece content system"
         ]
+         hidden : false,
       },
       {
 id: "project-fourthx",
@@ -429,6 +432,7 @@ tags: [
 imageUrl: "/assets/work/fourthx.png",
 externalLink:
 "https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
+                 hidden : false,
 },
        {
 id: "project-1781805925539",
