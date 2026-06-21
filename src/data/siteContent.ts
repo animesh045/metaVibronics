@@ -381,8 +381,8 @@ export const defaultSiteContent: SiteContent = {
     "Offline collateral design (menus, posters, packaging, event creatives)",
     "Moodboards and visual references",
     "Multi-format creative adaptations"
-        ]
-        hidden : true,
+        ],
+        "hidden": true
       },
        {
         "id": "project-1781805851562",
@@ -404,8 +404,8 @@ export const defaultSiteContent: SiteContent = {
        "Instagram carousel posts",
     "Animated reel covers",
     "20-piece content system"
-        ]
-         hidden : false,
+        ],
+         "hidden": false
       },
       {
 id: "project-fourthx",
@@ -431,8 +431,8 @@ tags: [
 ],
 imageUrl: "/assets/work/fourthx.png",
 externalLink:
-"https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link"
-                 hidden : false,
+"https://drive.google.com/drive/folders/1jwlxbxqGOLEsBO0mSR5waJKYFNXlMrKL?usp=drive_link",
+                 "hidden": false
 },
        {
 id: "project-1781805925539",
